@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deep Learning Demystified</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-md bg-light fixed-top">
+          <!-- Brand -->
+          <a class="navbar-brand" href="#">
+              <img src="/images/logo.png" id="logo">
+            </a> 
+        
+          <!-- Toggler/collapsible Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <i class="fa fa-align-justify" style="font-size:30px;"></i>
+          </button>
+        
+          <!-- Navbar links -->
+
+          <div class="collapse navbar-collapse ml-auto justify-content-end" id="collapsibleNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      
+        <div class="scroll-pages">
+          <section class='scroll-child'>
+              <div class="jumbotron" style="margin:100px 0 0 0;">
+                  <h1 class="display-3">Deep Learning</h1>
+                  <h1 class="display-5 white-text">
+                    <span
+                      class="txt-rotate"
+                      data-period="1"
+                      data-rotate='[ "For Everyone.", "Made Simple." ]'>
+                    </span>
+                  </h1>
+              </div>
+      
+            <div class="row">
+              <div class="col-sm-4 text-center-align" style="padding:20px 80px 20px 80px;">
+                  <div class="card" style="width: 100%;">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                            <img class="img-circle" src="/images/eye.png">
+                        </h5>
+                        <p class="card-text column-text">Articles take no more than 15 minutes read</p>
+                      </div>
+                    </div>
+                  <!-- <img class="img-circle" src="/images/eye.png">
+                  <p class="column-text">Articles take no more than 15 minutes read</p> -->
+              </div>
+              <div class="col-sm-4 text-center-align" style="padding:20px 80px 20px 80px">
+                  <div class="card" style="width: 100%;">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                            <img class="img-circle" src="/images/eye.png">
+                        </h5>
+                        <p class="card-text column-text">Core concepts explained in a simple and detailed way</p>
+                      </div>
+                    </div>
+                  <!-- <img class="img-circle" src="/images/eye.png">
+                  <p class="column-text">Core concepts explained in a simple and detailed way</p> -->
+              </div>
+              <div class="col-sm-4 text-center-align" style="padding:20px 80px 20px 80px">
+                  <div class="card" style="width: 100%;">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                            <img class="img-circle" src="/images/eye.png">
+                        </h5>
+                        <p class="card-text column-text">Visuals for explaining complex concepts</p>
+                    </div>
+                  </div>
+                  <!-- <img class="img-circle" src="/images/eye.png">
+                <p class="column-text">Visuals for explaining complex concepts</p> -->
+              </div>
+            </div>
+          </section>
+          <section class='scroll-child'>
+              <div class="row">
+                <div class="tab col-sm-4 text-center-align">
+                  <h5 class="tab-header tab-1 active">Fundamentals of Deep Learning</h5>
+                </div>
+                <div class="tab col-sm-4 text-center-align">
+                    <h5 class="tab-header tab-2">Deep Natural Language Processing</h5>
+                  </div>
+                  <div class="tab col-sm-4 text-center-align">
+                      <h5 class="tab-header tab-3">Deep Computer Vision</h5>
+                    </div>
+              </div>
+
+                <div class="row" id="links">
+                  </div>
+                </div>
+          </section>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/javascripts/action.js"></script>
+    <script>
+        $(".tab .tab-header").on("click", function() {
+          $(".tab .tab-header").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        $(".row").on("click", "a.article-link", function(){
+          window.open($(this).attr('href'));
+          return(false);
+        });
+    
+    </script>
+    <footer class="footer" style="background-color: #5C9AED; color: white">
+      <div class="footer-copyright text-center py-3">Developed By: 
+        <a href="https://www.linkedin.com/in/hemanthhk/" onclick="window.open('https://www.linkedin.com/in/hemanthhk/');return false;" style="color:white; text-decoration: underline;"> Hemant H Kumar</a>
+      </div>
+    </footer>
+  </body>
+</html>
